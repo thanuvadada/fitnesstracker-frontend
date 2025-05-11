@@ -1,0 +1,202 @@
+.all-exercises-page{
+    display: flex;
+}
+
+.all-exercises-page-right{
+    flex: 1;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: thin; 
+    scrollbar-color: #80fa01 rgba(18, 18, 18, 0.5); 
+}
+
+.all-exercises-page::-webkit-scrollbar {
+    width: 8px;
+}
+
+.all-exercises-page::-webkit-scrollbar-track {
+    background: rgba(18, 18, 18, 0.5); 
+}
+
+.all-exercises-page::-webkit-scrollbar-thumb {
+    background: #80fa01; 
+    border-radius: 10px;
+}
+
+.all-exercises-page::-webkit-scrollbar-thumb:hover {
+    background: #65e700;
+}
+
+.all-exercises-page-right-top h1{
+    padding: 2rem;
+    color: #80fa01;
+    font-size: 4rem;
+}
+.filter-bar{
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.filter-bar input {
+    width: 20rem;
+    height: 2rem;
+    padding: 0.5rem;
+    background-color: transparent;
+    outline: 2px solid #ddf6c1;
+    color: #80fa01;
+    border: none;
+    font-size: 1.3rem;
+}
+
+.filter-bar input:focus {
+    outline: 2px solid #80fa01; 
+    border: none;
+}
+.filter-bar input::placeholder{
+   font-size: 1.3rem;
+}
+
+.filter-bar .sort-select {
+    height: 3.25rem;
+    padding: 0 0.5rem;
+    background-color: #80fa01;
+    color: #1f1f1f;
+    font-weight: 800;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    appearance: none; /* Remove the default arrow */
+    -webkit-appearance: none; /* Remove default arrow in WebKit browsers */
+    -moz-appearance: none; /* Remove default arrow in Firefox */
+    position: relative;
+}
+
+.filter-bar .sort-select::after {
+    content: '▼'; /* Custom arrow */
+    font-size: 0.6rem;
+    color: #1f1f1f;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.filter-bar .sort-select option {
+    background-color: #1f1f1f;
+    padding: 2rem;
+    color: #80fa01;
+    height: 3.25rem;
+}
+
+
+.filter-bar .sort-select option:hover {
+    background-color: #80fa01;
+    color: #1f1f1f;
+}
+
+
+.exercise-cards-container{
+
+    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(
+        135deg,
+        #80fa01 0,
+        #80fa01 0.5px,
+        #1f1f1f 0,
+        #1f1f1f 50%
+    );
+    min-height: 65vh;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.exercise-card{
+    background-color: rgba(18, 18, 18, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 8px 0px #80fa01;
+    outline: 1px solid #80fa01;
+    padding: 0.8rem;
+    margin: 0.5rem;
+    width: 18rem;
+    height: 18rem;
+    color: #80fa01;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.exercise-card-h1p{
+    h1{
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    p{
+        color: #ddf6c1;
+        font-size: 0.9rem;
+    }
+}
+
+.exercise-card h2 span{
+    font-size: 1.2rem;
+}
+
+.exercise-card-buttons{
+    display: flex;
+    gap: 10px;
+}
+.btn-view{
+    color: #80fa01;
+    font-size: 2rem;
+}
+
+.exercise-card-admin-btns{
+    display: flex;
+}
+
+.btn-edit, .btn-delete{
+    cursor: pointer;
+}
+
+.btn-view:hover , .btn-edit:hover, .btn-delete:hover{
+    transform: scale(1.2);
+}
+
+.pagination{
+    background-color: #1f1f1f;
+    user-select: none;
+    color: #80fa01;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+}
+.pagination span{
+    margin-bottom: 0.7rem;
+}
+.pagination h2{
+    margin: 0 2rem;
+    cursor: pointer;
+}
+
+
+@media (max-width: 700px){
+    .filter-bar{
+        flex-direction: column;
+        align-items: center;
+        padding: 0.4rem ;
+    }
+    .filter-bar input {
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,96 @@
+.dashboard-full{
+    display: flex;
+}
+
+.dashboard{
+    background-color: #1f1f1f;
+    overflow-y: scroll;
+    max-height: 95vh;
+    flex: 1;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+}
+
+.dashboard-hello{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #80fa01;
+    padding: 2rem;
+}
+
+.dashboard-bento{
+    margin-top: 2rem;
+    padding: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+}
+.bento-1{
+    width: 25rem;
+    height: 30rem;
+    background-color: rgba(18, 18, 18, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 8px 0px #80fa01;
+    outline: 1px solid #80fa01;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.bento-2{
+    width: 25rem;
+    height: 30rem;
+    background-color: rgba(18, 18, 18, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 8px 0px #80fa01;
+    outline: 1px solid #80fa01;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.bento-3{
+    width: 25rem;
+    height: 30rem;
+    background-color: rgba(18, 18, 18, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 8px 0px #80fa01;
+    outline: 1px solid #80fa01;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.dashboard-pie{
+    color: #80fa01;
+    margin-bottom: 1rem;
+}
+.bar-chart-div{
+    height: 25rem;
+}
+
+
+
+.no-workouts-message{
+    color: #80fa01;
+    padding: 2rem;
+}
+
+
+
+
+@media (max-width: 1000px){
+    .dashboard{
+
+        width: calc(100% - 15rem);
+
+    }
+}
+
+@media (max-width: 700px){
+    .dashboard{
+
+        width: calc(100% - 3rem);
+
+    }
+}

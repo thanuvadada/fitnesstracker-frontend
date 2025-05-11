@@ -1,0 +1,104 @@
+
+.login-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80fa01;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+    font-family: "DM Sans", sans-serif;
+    background-size: 50px 50px;
+        background-image: repeating-linear-gradient(
+          135deg,
+          #1f1f1f 0,
+          #1f1f1f 4px,
+          #1f1f1f 0,
+          #80fa01 50%
+        );
+
+    position: relative;
+}
+
+.login-input{
+
+    display: flex;
+    flex-direction: column;
+    height: 21rem;
+    width: 32vw;
+}
+
+.login-page label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ddf6c1;
+    margin-bottom: 0.3rem;
+
+    span{
+        font-size: 0.7rem;
+    }
+}
+.login-page input{
+    padding: 0.7rem 0.5rem;
+    background-color: transparent;
+    outline: 2px solid #ddf6c1;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 1rem;
+    color: #ddf6c1;
+}
+.login-page input:focus{
+    outline: 2px solid #80fa01;
+    color: #80fa01;
+}
+.login-page input::placeholder{
+    font-size: 1rem;
+    
+}
+
+.login-form-submit{
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem 0.5rem;
+    background-color: #1f1f1f;
+    outline: 2px solid #80fa01;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    margin-bottom: 0rem;
+    color: #80fa01;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button-google-icon{
+        padding-right: 1rem;
+        font-size: 1.5rem;
+    }
+}
+.login-form-submit:hover{
+    background-color: #80fa01;
+    color: #1f1f1f;
+    outline: 2px solid #224200;
+}
+
+@media (max-width: 700px){
+    .login-page{
+        width: 100vw;
+    }
+
+    .register-card{
+        width: 75vw;
+    }
+
+    .login-input{
+        width: 70vw;
+    }
+    
+
+    .login-page label{
+        font-size: 1rem;
+    }
+}

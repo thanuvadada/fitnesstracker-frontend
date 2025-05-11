@@ -1,0 +1,157 @@
+
+
+
+.sidebar{
+    background: radial-gradient(circle at 10% 35%, #448301, #121212);
+    
+
+    width: 20rem;
+    height: 100vh;
+    padding: 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    border-right: 0.1rem solid #80fa01;
+    /* transition: all ease-in 0.5s; */
+
+}
+
+.sidebar-top{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: start;
+}
+
+.sidebar-top-logo{
+    .sidebar-top-logo-heading{
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #80fa01;
+        text-decoration: none;
+        /* transition: all ease-in 0.5s; */
+    }
+    margin-bottom: 2rem;
+}
+
+
+.sidebar-top-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top-menu-item{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem 0;
+    color: #ddf6c1;
+}
+
+.sidebar-top-menu-item:hover{
+    color: #80fa01;
+    border-bottom: 1px solid #80fa01;
+}
+
+.sidebar-logout{
+    button{
+        font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 800;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0;
+    color: #ddf6c1;
+    }
+    button:hover{
+        color: #80fa01;
+        border-bottom: 1px solid #80fa01;
+    }
+}
+
+.sidebar-dashboard-icon, 
+.sidebar-logout-icon, 
+.sidebar-profile-icon, 
+.sidebar-exercise-icon{
+    padding-right: 15px;
+}
+
+@media (max-width: 1000px){
+
+    .sidebar{
+        width: 15rem;
+        padding: 0 1rem 0 1rem;
+    }
+
+
+    .sidebar-top-logo{
+        .sidebar-top-logo-heading{
+            font-size: 2.8rem;
+        }
+    }
+
+
+    .sidebar-top-menu-item{
+        font-size: 1.7rem;
+        
+    }
+
+    .sidebar-logout{
+        button{
+            font-size: 1.7rem;
+            
+        }
+    }
+
+}
+
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 3rem;
+        padding: 0 0 0 0.5rem;
+    }
+
+    .sidebar-top-logo {
+        padding-top: 10rem;
+        margin-right: 8px;
+        order: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .sidebar-top-logo-heading {
+            transform: rotate(90deg);
+            font-size: 2rem;
+            white-space: nowrap;
+            text-align: center;
+            transform-origin: center;
+        }
+    }
+
+    .sidebar-top-menu {
+        order: 1;
+    }
+
+    .sidebar-top-menu-item {
+        span {
+            display: none;
+        }
+    }
+
+    .sidebar-logout {
+        button {
+            span {
+                display: none;
+            }
+        }
+    }
+}

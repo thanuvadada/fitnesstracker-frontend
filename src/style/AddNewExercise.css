@@ -1,0 +1,113 @@
+.add-exercise{
+    display: flex;
+}
+.add-exercise-right{
+
+    flex: 1;
+}
+.add-exercise-right-top{
+    color: #80fa01;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.add-exercise-form{
+    display: flex;
+    padding: 2rem;
+}
+
+.add-exercise-form form{
+    display: flex;
+    flex-direction: column;
+}
+.add-exercise-form form label{
+    color: #80fa01;
+    font-size: 2rem;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.2rem;
+}
+.add-exercise-form form label input{
+    border: 3px solid #80fa01;
+    background-color: transparent;
+    color: #80fa01;
+    height: 1.7rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.add-exercise-form form label textarea{
+    border: 3px solid #80fa01;
+    background-color: transparent;
+    color: #80fa01;
+    height: 6rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.add-exercise-form form label input:focus , .add-exercise-form form label textarea:focus , .add-exercise-form form label select:focus{
+    outline: none;
+}
+
+.add-exercise-form form label select{
+    border: 3px solid #80fa01;
+    background-color: transparent;
+    color: #80fa01;
+    height: 3.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.add-exercise-form form label select option {
+    background-color: #1f1f1f;
+}
+
+
+
+.add-exercise-form form fieldset{
+    display: flex;
+    gap: 2rem;
+    border: 3px solid #80fa01;
+    padding: 1rem;
+
+    
+}
+.add-exercise-form form fieldset legend{
+    color: #80fa01;
+    padding: 1rem 0.4rem;
+
+}
+
+.add-exercise-btn{
+    margin-top: 2rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #1f1f1f;
+    border: 3px solid #80fa01;
+    color: #80fa01;
+    cursor: pointer;
+}
+.add-exercise-btn:hover{
+    background-color: #80fa01;
+    color: #1f1f1f;
+}
+
+.delete-exercise-btn{
+    margin-top: 0.5rem;
+    height: 3rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #1f1f1f;
+    border: 3px solid #e63617;
+    color: #e63617;
+    cursor: pointer;
+}
+
+.delete-exercise-btn:hover{
+    background-color: #e63617 ;
+    color: #1f1f1f;
+}

@@ -1,0 +1,166 @@
+.my-profile {
+    display: flex;
+    background-size: 100px 100px;
+    background-image: repeating-linear-gradient(
+        135deg,
+        #80fa01 0,
+        #80fa01 0.5px,
+        #1f1f1f 0,
+        #1f1f1f 50%
+    );
+}
+
+.profile-details-right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.profile-details-top {
+    display: flex;
+    background-color: #1f1f1f;
+    padding: 2rem;
+    height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-details h1 {
+    font-size: 4rem;
+    color: #80fa01;
+}
+
+.profile-details-body {
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+}
+
+.profile-details-body p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #80fa01;
+    border-left: solid 2px #80fa01;
+    padding-left: 0.8rem;
+}
+
+.seven-days-summary {
+    color: #80fa01;
+}
+
+
+.last-week-chart {
+    display: flex;
+    justify-content: start; /* Center the chart horizontally */
+    align-items: center; /* Center the chart vertically */
+    width: 100%; /* Full width of the parent */
+    height: 60vh; /* Adjust height as needed */
+    max-width: 100%; /* Prevent chart from exceeding container width */
+    max-height: 100%; /* Prevent chart from exceeding container height */
+    padding: 1rem; /* Optional: padding around the chart */
+    box-sizing: border-box; /* Include padding in width and height */
+    margin: 1rem;
+}
+
+.last-week-chart-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(7px);
+    box-shadow: 0px 0px 25px 0px #80fa01;
+    outline: 1px solid #80fa01;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    
+}
+
+.edit-profile-button{
+    height: fit-content;
+    padding: 0.8rem 0.9rem;
+    background-color: #1f1f1f;
+    border: #80fa01 solid 2px;
+    color: #80fa01;
+    font-weight: 600;
+    cursor: pointer;
+}
+.edit-profile-button:hover{
+    background-color: #80fa01;
+    color: #1f1f1f;
+}
+
+@media (max-width: 1000px){
+    .profile-details h1 {
+        font-size: 4rem;
+    }
+    .profile-details-top{
+        padding: 1rem;
+        
+    }
+    .profile-details-body {
+        display: flex;
+    width: fit-content;
+        justify-content: start;
+
+    }
+    .profile-details-body p {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .seven-days-summary {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .last-week-chart {
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .last-week-chart-color {
+        width: 90%;
+    }
+   
+    
+}
+
+
+
+@media (max-width: 700px){
+    .profile-details h1 {
+        font-size: 2rem;
+    }
+    .profile-details-top{
+        padding: 1rem;
+        
+    }
+    .profile-details-body {
+        display: flex;
+    width: fit-content;
+    flex-direction: column;
+        justify-content: start;
+
+    }
+    .profile-details-body p {
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+    }
+    .seven-days-summary {
+        font-size: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    
+   
+    
+}

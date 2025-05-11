@@ -1,0 +1,202 @@
+
+.register-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #80fa01;
+    width: 80vw;
+    margin: auto;
+    height: 100vh;
+    background-size: 50px 50px;
+    background-image: repeating-linear-gradient(
+      135deg,
+      #80fa01 0,
+      #80fa01 4px,
+      #1f1f1f 0,
+      #1f1f1f 50%
+    );
+
+    position: relative;
+}
+
+.register-notification-success{
+    background-color: #1f1f1f;
+    width: fit-content;
+    height: 3rem;
+    color: #80fa01;
+    text-align: center;
+    border-bottom: 0.3rem solid #80fa01;
+    border-right: 0.3rem solid #80fa01;
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    position: absolute;
+    top: 11rem;
+}
+.register-notification-error{
+    background-color: #1f1f1f;
+    width: fit-content;
+    height: 3rem;
+    color: rgb(255, 26, 26);
+    text-align: center;
+    border-bottom: 0.3rem solid rgb(255, 26, 26);
+    border-right: 0.3rem solid rgb(255, 26, 26);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+    position: absolute;
+    top: 11rem;
+}
+
+.register-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 35vw;
+    padding: 4rem 2rem 0 2rem;
+    background-color: #1f1f1f;
+    border-bottom: 0.3rem solid #ddf6c1;
+    border-right: 0.3rem solid #ddf6c1;
+
+    .register-card-logo{
+        text-decoration: none;
+        color: #ddf6c1;
+        font-size: 2rem;
+        margin-bottom: rem;
+    }
+    .register-card-logo:hover{
+        color: #80fa01;
+    }
+}
+/* .register-card:active{
+    border-bottom: 0.4rem solid #80fa01;
+    border-right: 0.4rem solid #80fa01;
+} */
+
+.register-input{
+
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    width: 32vw;
+}
+
+.register-input-2{
+    display: flex;
+    align-items: center;
+    width: 32vw;
+}
+
+.register-age{
+    width: 32vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: black; */
+}
+.register-number{
+
+    width: 60%;
+    text-align: center;
+}
+
+.register-page label{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #ddf6c1;
+    margin-bottom: 0.3rem;
+
+    span{
+        font-size: 0.7rem;
+    }
+}
+.register-page input{
+    padding: 0.7rem 0.5rem;
+    background-color: transparent;
+    outline: 2px solid #ddf6c1;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 1rem;
+    color: #ddf6c1;
+}
+.register-page input:focus{
+    outline: 2px solid #80fa01;
+    color: #80fa01;
+}
+.register-page input::placeholder{
+    font-size: 1rem;
+    
+}
+
+.form-submit{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.7rem 0.5rem;
+    background-color: #1f1f1f;
+    outline: 2px solid #80fa01;
+    font-size: 1.2rem;
+    font-weight: 800;
+    border: none;
+    margin-bottom: 1rem;
+    color: #80fa01;
+    cursor: pointer;
+}
+.form-submit:hover{
+    background-color: #80fa01;
+    color: #1f1f1f;
+    outline: 2px solid #224200;
+}
+
+.form-existing-user{
+    color: #ddf6c1;
+    text-align: center;
+    font-weight: 300;
+    a{
+        color: #80fa01;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (max-width: 700px){
+    .register-page{
+        width: 100vw;
+    }
+
+    .register-card{
+        width: 75vw;
+    }
+
+    .register-input{
+        width: 70vw;
+    }
+    
+    .register-input-2{
+        width: 70vw;
+    }
+
+    .register-page label{
+        font-size: 1rem;
+    }
+
+    .form-existing-user{
+        a{
+            font-size: 1rem;
+        }
+    }
+}
